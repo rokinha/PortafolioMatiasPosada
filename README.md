@@ -30,9 +30,8 @@ Tecnologías utilizadas
 - Vite
 - Scrum
 
-## 📂 Proyectos
-
-### 🐾 Sistema de Gestión Veterinaria
+Proyectos
+Sistema de Gestión Veterinaria
 
 Sistema de escritorio desarrollado en Java Swing y conectado a MySQL.
 
