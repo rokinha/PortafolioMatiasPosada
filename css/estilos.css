@@ -1,0 +1,318 @@
+/* ================================
+   PALETA DE COLORES
+   ================================ */
+
+:root {
+    --color-principal: #17324d;
+    --color-secundario: #2f6f9f;
+    --color-acento: #4da3d9;
+    --color-fondo: #f4f7fa;
+    --color-blanco: #ffffff;
+    --color-texto: #1f2933;
+    --color-borde: #d9e2ec;
+}
+
+
+/* ================================
+   CONFIGURACIÓN GENERAL
+   ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    overflow-wrap: break-word;
+}
+
+
+/* ================================
+   ENCABEZADO
+   ================================ */
+
+.encabezado {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 30px 20px;
+}
+
+.encabezado-contenido {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+}
+
+.encabezado p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+/* ================================
+   NAVEGACIÓN
+   ================================ */
+
+.navegacion {
+    background-color: var(--color-secundario);
+    padding: 15px 10px;
+}
+
+.nav-contenido {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.navegacion a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navegacion a:hover {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+
+/* ================================
+   PRESENTACIÓN
+   ================================ */
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion h2 {
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+.presentacion p {
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+.presentacion img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 25px auto 0;
+}
+
+
+/* ================================
+   BOTÓN BOOTSTRAP PERSONALIZADO
+   ================================ */
+
+.presentacion .btn-primary {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.presentacion .btn-primary:hover {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SECCIONES
+   ================================ */
+
+main section h2 {
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+#Sobre-mi p {
+    line-height: 1.7;
+}
+
+#Habilidades ul {
+    line-height: 1.9;
+}
+
+
+/* ================================
+   PROYECTOS
+   ================================ */
+
+#Proyectos .card {
+    height: 100%;
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#Proyectos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 50, 77, 0.15);
+}
+
+#Proyectos .card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#Proyectos .card-body {
+    padding: 20px;
+}
+
+#Proyectos .card-title {
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#Proyectos .card-text {
+    line-height: 1.6;
+}
+
+
+/* ================================
+   CONTACTO
+   ================================ */
+
+#Contacto {
+    max-width: 100%;
+}
+
+#Contacto p {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.pie-pagina {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pie-contenido {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pie-contenido p {
+    margin: 0;
+}
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding: 20px 10px;
+    }
+
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+
+    .encabezado p {
+        font-size: 1rem;
+    }
+
+    .nav-contenido {
+        gap: 8px;
+    }
+
+    .navegacion a {
+        font-size: 0.95rem;
+        padding: 7px 9px;
+    }
+
+    .presentacion p {
+        max-width: 100%;
+    }
+
+    #Proyectos .card-title {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* ================================
+   RESPONSIVE PARA CELULARES
+   ================================ */
+
+@media (max-width: 576px) {
+
+    .encabezado h1 {
+        font-size: 1.8rem;
+    }
+
+    .encabezado p {
+        font-size: 0.95rem;
+    }
+
+    .nav-contenido {
+        gap: 5px;
+    }
+
+    .navegacion a {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    .presentacion img {
+        max-width: 100%;
+    }
+
+    #Contacto p {
+        font-size: 0.95rem;
+    }
+}
